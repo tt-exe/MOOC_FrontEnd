@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+<link rel="stylesheet" href="fonts/fonts.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    
+         
+</head>
+<body>
+    <div class="uk-section uk-section-secondary uk-preserve-color uk-padding-remove-bottom" >
+
+            <div class="uk-position-top" >
+                
+                <nav class="uk-navbar-container uk-navbar-transparent uk-light uk-text-bold" uk-navbar>
+                    <div class=" uk-hidden@m">  
+                    <div class="uk-navbar-left">
+                            <a class="uk-navbar-toggle" href="#offcanvas-slide" uk-toggle>
+                                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                            </a>
+                        <div id="offcanvas-slide" uk-offcanvas>
+                                <div class="uk-offcanvas-bar">
+                            
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a class="uk-logo" href="index.html">MOOC</a></li>
+                                        <li><a href="gs.html">Get started</a></li>
+                                        <li class="uk-text-bold"><a href="explore.html">Explore</a></li>
+                                        <li><a href="instructor.html">Become an Instructor</a></li>
+                                        <li class="uk-active"><a >Sign-in</a></li>
+                                    </ul>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </nav>
+
+                <nav class="uk-navbar-container uk-navbar-transparent uk-light uk-text-bold" uk-navbar>
+                        <div class="uk-navbar-center uk-visible@m">
+    
+                            <div class="uk-navbar-center-left"><div>
+                                <ul class="uk-navbar-nav">
+                                    <li><a class="uk-padding-remove-horizontal" href="gs.html">Get started</a></li>
+                                    <li><a href="explore.html">Explore</a></li>
+                                </ul>
+                            </div></div>
+                            <a class="uk-navbar-item uk-logo" href="index.html">MOOC</a>
+                            <div class="uk-navbar-center-right"><div>
+                                <ul class="uk-navbar-nav">
+                                    <li><a href="instructor.html">Become an Instructor</a></li>
+                                    <li class="uk-active"><a>Sign-in</a></li>
+                                </ul>
+                            </div></div>
+                    
+                        </div>
+                    </nav>
+
+            </div>
+</div>
+
+<div class="uk-section uk-section-secondary uk-preserve-color uk-child-width-expand uk-padding uk-padding-remove-right uk-text-center" uk-grid>
+            <div style="margin:auto;" class="uk-padding-medium uk-width-5-6 uk-width-2-3-@m uk-margin-large@m uk-margin-large-bottom uk-card uk-card-default uk-card-body">
+                <ul class="uk-child-width-expand" uk-tab uk-switcher>
+                    <li class="uk-active"><a href="#">Sign-up</a></li>
+                    <li><a href="#">Sign-in</a></li>
+                </ul>
+                <ul class="uk-switcher uk-margin">
+                    <li>
+                        <h2 class="uk-card-title uk-heading-hero uk-margin-small-bottom">Create your account</h2>
+
+                        <p class=" uk-margin-small">Sign up through these services :</p>
+                        <div class="uk-grid-small uk-margin uk-child-width-expand@s uk-margin-small-top" uk-grid>
+                            <button class="uk-button uk-button-default uk-padding-remove-horizontal uk-margin-small-right uk-margin-small-left"><i class="fab fa-facebook-square"></i>   Facebook</button>
+                            <button class="uk-button uk-button-default uk-padding-remove-horizontal uk-margin-small-right uk-margin-small-left"><i class="fab fa-google"></i>   Google</button>
+                        </div>
+                            <hr class="uk-margin-small">
+                            <p class=" uk-margin-small">Or fill in the form below :</p>
+                            <form class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-2@s">
+                                    <input class="uk-input" type="text" placeholder="First Name *">
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <input class="uk-input" type="text" placeholder="Last Name *">
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <input class="uk-input" type="text" placeholder="Email Address *">
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <input class="uk-input" type="text" placeholder="Password *">
+                                </div>
+                                <div class="uk-width-1-2@s">
+                                    <input class="uk-input" type="text" placeholder="Confirm Password *">
+                                </div>
+                                <div class="uk-width-1-1">             
+                                    <p class="uk-text-center">By clicking Sign Up, you agree to our <a class="uk-text-bold">Terms of Use</a> and our <a class="uk-text-bold">Privacy Policy</a></p>
+                                </div>
+                                <div class="uk-width-1-1 uk-padding-remove-horizontal uk-child-width-medium">
+                                    <button class="uk-button uk-button-primary uk-text-center uk-padding-remove-horizontal uk-margin-small-left">Sign Up</button>
+                                </div>
+                                </form>
+                    </li>
+                    <li>
+                            <h3 class="uk-card-title uk-heading-hero">Sign in to you account</h3>
+                            <p class=" uk-margin-small">Sign in through these services :</p>
+                            <div class="uk-grid-small uk-margin uk-child-width-expand@s uk-margin-small-top" uk-grid>
+                                <button class="uk-button uk-button-default uk-padding-remove-horizontal uk-margin-small-right uk-margin-small-left"><i class="fab fa-facebook-square"></i>   Facebook</button>
+                                <button class="uk-button uk-button-default uk-padding-remove-horizontal uk-margin-small-right uk-margin-small-left"><i class="fab fa-google"></i>   Google</button>
+                            </div>
+                                <hr class="uk-margin-small">
+                                <p class=" uk-margin-small">Or login through :</p>
+                                <form class="uk-grid-small" uk-grid>
+                                    <div class="uk-width-1-1">
+                                        <input class="uk-input" type="text" placeholder="Email Address">
+                                    </div>
+                                    <div class="uk-width-1-1">
+                                        <input class="uk-input" type="text" placeholder="Password">
+                                    </div>
+                                    <div class="uk-width-1-1">             
+                                        <p class="uk-text-center">By clicking Sign In, you agree to our <a class="uk-text-bold">Terms of Use</a> and our <a class="uk-text-bold">Privacy Policy</a></p>
+                                    </div>
+                                    <div class="uk-width-1-1 uk-padding-remove-horizontal uk-child-width-medium">
+                                        <button class="uk-button uk-button-primary uk-text-center uk-padding-remove-horizontal uk-margin-small-left">Sign In</button>
+                                    </div>
+                                    </form> </li>
+                </ul>
+
+
+
+            </div>
+
+            
+
+        
+    </div>
+    
+    
+
+    <footer class=" uk-card uk-card-secondary uk-margin-remove uk-padding-small">
+            <p class="uk-margin-remove uk-text-center uk-text-small" >Copyright MOOC &copy; 2018</p>
+        </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+</body>
+</html>

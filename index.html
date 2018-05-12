@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+<link rel="stylesheet" href="fonts/fonts.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    
+         
+</head>
+<body>
+    <div class="uk-section-primary uk-preserve-color" >
+
+        <div class="uk-position-relative uk-cover-container" uk-height-viewport>
+            <img src="img/bg-main.jpg" alt="" style="filter:blur(2px);-webkit-filter:blur(2px);"uk-cover>
+            <div class="uk-position-top" >
+                
+                <nav class="uk-navbar-container uk-navbar-transparent uk-light uk-text-bold" uk-navbar>
+                    <div class=" uk-hidden@m">  
+                    <div class="uk-navbar-left">
+                            <a class="uk-navbar-toggle" href="#offcanvas-slide" uk-toggle>
+                                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                            </a>
+                        <div id="offcanvas-slide" uk-offcanvas>
+                                <div class="uk-offcanvas-bar">
+                            
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a href="gs.html">Get started</a></li>
+                                        <li class="uk-nav-header uk-text-bold"><a href="explore.html">Explore</a></li>
+                                        <li><a href="instructor.html">Become an Instructor</a></li>
+                                        <li><a href="connect.html">Sign-in</a></li>
+                                    </ul>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="uk-navbar-center uk-visible@m">
+
+                        <div class="uk-navbar-center-left"><div>
+                            <ul class="uk-navbar-nav">
+                                <li ><a class="uk-padding-remove-horizontal" href="gs.html">Get started</a></li>
+                                <li><a href="explore.html">Explore</a></li>
+                            </ul>
+                        </div></div>
+                        <div class="uk-navbar-center-right"><div>
+                            <ul class="uk-navbar-nav">
+                                <li><a href="instructor.html">Become an Instructor</a></li>
+                                <li><a href="connect.html">Sign-in</a></li>
+                            </ul>
+                        </div></div>
+                
+                    </div>
+                </nav>
+            </div>
+
+
+            <div uk-parallax="blur: 10;" class="uk-position-center uk-light" style="text-shadow: 0 0 8px #282522;">
+                <h1 class="uk-heading-hero uk-text-center">MOOC</h1>
+                <h2 class="uk-h3 uk-text-center uk-text-bold uk-text-uppercase" style="letter-spacing: 3px;">Learning never stops</h2>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="uk-visible@m"uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                <div class="uk-navbar-center">
+        
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#editor" uk-scroll>Editors' Picks</a></li>
+                        <li><a href="#who" uk-scroll>Who we are</a></li>
+                        <li><a href="#what" uk-scroll>What we do</a></li>
+                        <li><a href="#contribute" uk-scroll>Do you want to contribute ?</a></li>
+                        <li><a class="uk-margin-medium-left" uk-totop uk-scroll></a></li>
+                    </ul>
+        
+                </div>
+            </nav>
+        </div>
+    <div id="editor"class="uk-section uk-section-muted ">
+        
+        <div class="uk-container uk-margin-medium-bottom uk-h2 uk-text-center">  
+            <h2>Editors' Picks</h2>
+        </div> 
+
+        <div class="uk-dark uk-background-cover uk-panel uk-flex uk-flex-center uk-flex-middle" >
+                <div class="uk-container">
+                    <div class="uk-child-width-1-1@s uk-child-width-1-3@m " uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover">
+                                <div class="uk-card-media-top">
+                                    <img  height="200" src="img/course-img.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Course #1</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <span class="rating">
+                                            <i class="fas fa-star yellow"></i>
+                                            <i class="fas fa-star yellow"></i>
+                                            <i class="fas fa-star yellow"></i>
+                                            <i class="fas fa-star yellow"></i>
+                                            <i class="fas fa-star-half yellow"></i>
+                                            <span> 4.5 star rating </span>
+                                            <p class="uk-margin-remove-bottom uk-margin-small-top">42,000 feedbacks</p>
+                                    </span>
+                                    <span class="languages">
+                                            <div> Available languages : </div>
+                                            <div class="uk-label arabic">Arabic</div>
+                                            <div class="uk-label french">French</div>
+                                    </span>
+                                </div>
+                                <div class="uk-card-footer">
+                                    <a href="course.html" class="uk-button uk-button-text">Take this course</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover">
+                                <div class="uk-card-media-top">
+                                    <img  height="200" src="img/course-img.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <div class="uk-card-badge uk-label new" >New</div>
+                                    <h3 class="uk-card-title">Course #2</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <span class="rating">
+                                            <i class="fas fa-star yellow"></i>
+                                            <i class="fas fa-star yellow"></i>
+                                            <i class="fas fa-star yellow"></i>
+                                            <i class="fas fa-star yellow"></i>
+                                            <span> 4 star rating </span>
+                                            <p class="uk-margin-remove-bottom uk-margin-small-top">24,358 feedbacks</p>
+                                    </span>
+                                    <span class="languages">
+                                            <div> Available languages : </div>
+                                            <div class="uk-label english">English</div>
+                                            <div class="uk-label darija">Darija</div>
+                                    </span>
+                                </div>
+                                <div class="uk-card-footer">
+                                    
+                                    <a href="course.html" class="uk-button uk-button-text">Take this course</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover">
+                                <div class="uk-card-media-top">
+                                    <img height="256" src="img/course-img.jpg" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <div class="uk-card-badge uk-label exclusive" >Exclusive</div>
+                                    <h3 class="uk-card-title">Course #3</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <span class="rating">
+                                            <i class="fas fa-star yellow"></i>
+                                            <i class="fas fa-star yellow"></i>
+                                            <i class="fas fa-star yellow"></i>
+                                            <i class="fas fa-star yellow"></i>
+                                            <span> 4 star rating </span>
+                                            <p class="uk-margin-remove-bottom uk-margin-small-top">62,029 feedbacks</p>
+                                    </span>
+                                    <span class="languages">
+                                            <div> Available languages : </div>
+                                            <div class="uk-label tifinagh">Tifinagh</div>
+                                    </span>
+                                </div>
+                                <div class="uk-card-footer">
+                                    <a href="course.html" class="uk-button uk-button-text">Take this course</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    
+    <div id="who"class="uk-section uk-section-muted ">
+
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="img/course-img.jpg" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Who we are</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto quia adipisci dicta perferendis magni cupiditate aliquam voluptate nesciunt aperiam voluptatum animi obcaecati quos nihil nemo aspernatur, dolor sequi aliquid vero quis eaque unde rerum molestias, id hic! Deleniti, enim soluta.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        
+    <div id="what" class="uk-section uk-section-muted ">
+        
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                <img src="img/course-img.jpg" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">What we do</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus voluptatibus veniam exercitationem neque odio consequuntur consequatur voluptatem. Qui corporis necessitatibus ad numquam eveniet minima minus velit pariatur porro fugit nobis, autem quibusdam quae eligendi, accusamus vero exercitationem reiciendis, sapiente similique!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    <div id="contribute" class="uk-section uk-section-muted ">
+        
+
+            <div class="uk-container uk-margin-medium-bottom uk-h2 uk-text-center">  
+                <h2 class="uk-heading-primary uk-text-uppercase">Do you want to contribute ?</h2>
+                <p class="uk-text-small">Send as an email at <a href="mailto:team@mooc.org">team@mooc.org</a></p>
+            </div> 
+    
+    </div>
+    
+
+    <footer class="uk-card uk-card-secondary uk-margin-remove uk-padding-small">
+        <p class="uk-margin-remove uk-text-center uk-text-small" >Copyright MOOC &copy; 2018</p>
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+</body>
+</html>
