@@ -44,8 +44,43 @@
 
                         <div class="uk-navbar-center-left"><div>
                             <ul class="uk-navbar-nav">
-                                <li ><a class="uk-padding-remove-horizontal" href="gs.html">Get started</a></li>
-                                <li><a href="explore.html">Explore</a></li>
+                                <!--<li ><a class="uk-padding-remove-horizontal" href="gs.html">Get started</a></li>-->
+                                <li><a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                                        <div id="form" class="search uk-drop" uk-drop="mode: click; pos:left; offset: -100">
+                                            <form class="uk-search uk-search-navbar uk-width-1-1"  autocomplete="off">
+                                                <input id="search-input" class="uk-search-input" type="search" placeholder="Search..." autofocus>   
+                                            </form>
+                                        </div>
+                                </li>
+                                <li class="uk-inline"><a >Explore</a>
+                                    <div uk-dropdown class="uk-margin-remove-top">
+                                            <ul class="uk-nav uk-dropdown-nav">
+                                                <li><a href="explore.html">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                </li>
+                                <!--<li>
+                                    
+                                    <a class="uk-navbar-toggle uk-padding-remove-horizontal" uk-search-icon href="#"></a>
+                                    <div class="uk-navbar-item uk-padding-remove-right" uk-grid>
+                                        <form class="uk-search uk-search-navbar uk-padding-remove-horizontal">
+                                            <span uk-search-icon></span>
+                                            <input class="uk-search-input" type="search" placeholder="Search...">
+                                        </form>
+                                    </div>
+                                    
+                                    <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 160">
+                                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                                        <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                                    </form>
+                                    </div>
+                                </li>-->
                             </ul>
                         </div></div>
                         <div class="uk-navbar-center-right"><div>
@@ -190,7 +225,7 @@
                         <div>
             <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2 uk-margin" uk-grid>
                     <div class="course-icon uk-card-media-left uk-width-1-3 uk-width-1-2@s uk-margin-auto-vertical uk-margin-small-left uk-margin-remove@s">
-                        <img height="128" src="img/course-img.jpg" >
+                        <img height="128" class="uk-border-rounded uk-margin-medium-top uk-margin-medium-bottom" src="img/course-img.jpg" >
                     </div>
                     <div class="uk-width-expand">
                         <div class="uk-card-body">
@@ -215,8 +250,7 @@
                 </div>
                 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2 uk-margin" uk-grid>
                         <div class="course-icon uk-card-media-left uk-width-1-3 uk-width-1-2@s uk-margin-auto-vertical uk-margin-small-left uk-margin-remove@s"> 
-                            <div class="uk-label exclusive" >Exclusive</div>
-                            <img height="128" src="img/course-img.jpg" >
+                            <img height="128"class="uk-border-rounded uk-margin-medium-top uk-margin-medium-bottom" src="img/course-img.jpg" >
                         </div>
                         <div class="uk-width-expand">
                             <div class="uk-card-body">
@@ -293,8 +327,38 @@
         <p class="uk-margin-remove uk-text-center uk-text-small" >Copyright MOOC &copy; 2018</p>
     </footer>
 
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+    <script src="autocomplete.js"></script>
+    <script>
+        var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua &amp; Barbuda",
+        "Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados",
+        "Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina","Botswana","Brazil",
+        "British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde",
+        "Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica",
+        "Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica",
+        "Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia",
+        "Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon",
+        "Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey",
+        "Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran",
+        "Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati",
+        "Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania",
+        "Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands",
+        "Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco",
+        "Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand",
+        "Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea",
+        "Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda",
+        "Saint Pierre &amp; Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia",
+        "Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea",
+        "South Sudan","Spain","Sri Lanka","St Kitts &amp; Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland",
+        "Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga",
+        "Trinidad &amp; Tobago","Tunisia","Turkey","Turkmenistan","Turks &amp; Caicos","Tuvalu","Uganda","Ukraine",
+        "United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City",
+        "Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+    </script>
+    <script>
+        autocomplete(document.getElementById("search-input"), countries);
+    </script>
 </body>
 </html>
